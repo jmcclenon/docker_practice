@@ -1,63 +1,68 @@
-## 安装
+## 安装与卸载
 
-安装 Compose 之前，要先安装 Docker，在此不再赘述。
+`Compose` 支持 Linux、macOS、Windows 10 三大平台。
+
+`Compose` 可以通过 Python 的包管理工具 `pip` 进行安装，也可以直接下载编译好的二进制文件使用，甚至能够直接在 Docker 容器中运行。
+
+`Docker Desktop for Mac/Windows` 自带 `docker-compose` 二进制文件，安装 Docker 之后可以直接使用。
+
+```bash
+$ docker-compose --version
+
+docker-compose version 1.24.1, build 4667896b
+```
+
+Linux 系统请使用以下介绍的方法安装。
+
+### 二进制包
+
+在 Linux 上的也安装十分简单，从 [官方 GitHub Release](https://github.com/docker/compose/releases) 处直接下载编译好的二进制文件即可。
+
+例如，在 Linux 64 位系统上直接下载对应的二进制包。
+
+```bash
+$ sudo curl -L https://github.com/docker/compose/releases/download/1.24.1/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+
+$ sudo chmod +x /usr/local/bin/docker-compose
+```
 
 ### PIP 安装
-这种方式最为推荐。
 
-执行命令。
+*注：* `x86_64` 架构的 Linux 建议按照上边的方法下载二进制包进行安装，如果您计算机的架构是 `ARM` (例如，树莓派)，再使用 `pip` 安装。
+
+这种方式是将 Compose 当作一个 Python 应用来从 pip 源中安装。
+
+执行安装命令：
+
 ```bash
 $ sudo pip install -U docker-compose
 ```
 
-安装成功后，可以查看 `docker-compose` 命令的用法。
+可以看到类似如下输出，说明安装成功。
+
 ```bash
-$ docker-compose -h
-Fast, isolated development environments using Docker.
-
-Usage:
-  docker-compose [options] [COMMAND] [ARGS...]
-  docker-compose -h|--help
-
-Options:
-  --verbose                 Show more output
-  --version                 Print version and exit
-  -f, --file FILE           Specify an alternate compose file (default: docker-compose.yml)
-  -p, --project-name NAME   Specify an alternate project name (default: directory name)
-
-Commands:
-  build     Build or rebuild services
-  help      Get help on a command
-  kill      Kill containers
-  logs      View output from containers
-  port      Print the public port for a port binding
-  ps        List containers
-  pull      Pulls service images
-  rm        Remove stopped containers
-  run       Run a one-off command
-  scale     Set number of containers for a service
-  start     Start services
-  stop      Stop services
-  restart   Restart services
-  up        Create and start containers
+Collecting docker-compose
+  Downloading docker-compose-1.24.1.tar.gz (149kB): 149kB downloaded
+...
+Successfully installed docker-compose cached-property requests texttable websocket-client docker-py dockerpty six enum34 backports.ssl-match-hostname ipaddress
 ```
 
-之后，可以添加 bash 补全命令。
+### bash 补全命令
+
 ```bash
-$ curl -L https://raw.githubusercontent.com/docker/compose/1.2.0/contrib/completion/bash/docker-compose > /etc/bash_completion.d/docker-compose
-
+$ curl -L https://raw.githubusercontent.com/docker/compose/1.24.1/contrib/completion/bash/docker-compose > /etc/bash_completion.d/docker-compose
 ```
 
-### 二进制包
-发布的二进制包可以在 [https://github.com/docker/compose/releases](https://github.com/docker/compose/releases) 找到。
+### 卸载
 
-下载后直接放到执行路径即可。
+如果是二进制包方式安装的，删除二进制文件即可。
 
-例如，在常见的 Linux 平台上。
-
-```
-$ sudo curl -L https://github.com/docker/compose/releases/download/1.2.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
-$ sudo chmod a+x /usr/local/bin/docker-compose
+```bash
+$ sudo rm /usr/local/bin/docker-compose
 ```
 
+如果是通过 `pip` 安装的，则执行如下命令即可删除。
 
+```bash
+$ sudo pip uninstall docker-compose
+```

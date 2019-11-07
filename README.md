@@ -1,18 +1,42 @@
 # Docker — 从入门到实践
-0.7.3
 
-[Docker](http://www.docker.com) 是个划时代的开源项目，它彻底释放了虚拟化的威力，极大提高了应用的运行效率，降低了云计算资源供应的成本，同时让应用的部署、测试和分发都变得前所未有的高效和轻松！
+[![](https://img.shields.io/github/stars/yeasy/docker_practice.svg?style=social&label=Stars)](https://github.com/yeasy/docker_practice) [![](https://travis-ci.org/yeasy/docker_practice.svg?branch=master)](https://travis-ci.org/yeasy/docker_practice) [![](https://img.shields.io/github/release/yeasy/docker_practice/all.svg)](https://github.com/yeasy/docker_practice/releases) [![](https://img.shields.io/badge/Based-Docker%20CE%20v18.x-blue.svg)](https://github.com/docker/docker-ce) [![](https://img.shields.io/badge/Docker%20%E6%8A%80%E6%9C%AF%E5%85%A5%E9%97%A8%E4%B8%8E%E5%AE%9E%E6%88%98-jd.com-red.svg)](https://union-click.jd.com/jdc?e=&p=AyIGZRtYFAcXBFIZWR0yEgRQH1kXAhs3EUQDS10iXhBeGlcJDBkNXg9JHU4YDk5ER1xOGRNLGEEcVV8BXURFUFdfC0RVU1JRUy1OVxUBFwNXGVscMlVYLlAaXAV1Z1JHA0dWEHVXZTliY1QLWStaJQAWB10fXhwKEDdlG1wlUHzf462DsLMO0%2F%2BUjp2VIgZlG18RBBcCUBlbEAoTBWUcWxwySVI7HAhBBxEOBUgOFQYQUGUraxYyIjdVK1glQHxXUEhYEVEUUFQcC0IHGgRRSAgVARAPAhsLFgNCDl0ZWiUAEwZREg%3D%3D&t=W1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYEAYQBVUS)
 
-无论是应用开发者，运维人员，还是云计算从业人员，都有必要认识和掌握 Docker，以在有限的时间内做更多有意义的事。
+**v1.1.0**
 
-本书既适用于具备基础 Linux 知识的 Docker 初学者，也希望可供理解原理和实现的高级用户参考。同时，书中给出的实践案例，可供在进行实际部署时借鉴。前六章为基础内容，供用户理解 Docker 的基本概念和操作；7 ~ 9 章介绍一些高级操作；第 10 章给出典型的应用场景和实践案例；11 ~ 13 章介绍关于 Docker 实现的相关细节技术。后续章节则分别介绍一些相关的热门开源项目。
+| 语言           | 构建状态   | - |
+| :------------- | :------------- | :--- |
+| [zh-hans](https://github.com/yeasy/docker_practice)        | [![](https://travis-ci.org/yeasy/docker_practice.svg?branch=master)](https://travis-ci.org/yeasy/docker_practice)| [阅读](https://docker_practice.gitee.io/zh-cn) |
+| [us-en](https://github.com/yeasy/docker_practice/tree/english)          | [![](https://travis-ci.org/yeasy/docker_practice.svg?branch=english)](https://travis-ci.org/yeasy/docker_practice)| [阅读](https://docker_practice.gitee.io/us_en) |
+| [zh-hant](https://github.com/yeasy/docker_practice/tree/zh-Hant)        | [![](https://travis-ci.org/yeasy/docker_practice.svg?branch=zh-hant)](https://travis-ci.org/yeasy/docker_practice)| [阅读](https://docker_practice.gitee.io/zh_hant) |
 
-在线阅读：[GitBook](https://www.gitbook.io/book/yeasy/docker_practice) 或 [Github](https://github.com/yeasy/docker_practice/blob/master/SUMMARY.md)。
+[Docker](https://www.docker.com) 是个划时代的开源项目，它彻底释放了计算虚拟化的威力，极大提高了应用的维护效率，降低了云计算应用开发的成本！使用 Docker，可以让应用的部署、测试和分发都变得前所未有的高效和轻松！
 
-* pdf 版本 [下载](https://www.gitbook.com/download/pdf/book/yeasy/docker_practice)
-* epub 版本 [下载](https://www.gitbook.com/download/epub/book/yeasy/docker_practice)
+无论是应用开发者、运维人员、还是其他信息技术从业人员，都有必要认识和掌握 Docker，节约有限的生命。
 
-欢迎关注 DockerPool 社区微博 [@dockerpool](http://weibo.com/u/5345404432)，或加入 Docker 技术交流 QQ 群或微信组，分享 Docker 资源，交流 Docker 技术。
+本书既适用于具备基础 Linux 知识的 Docker 初学者，也希望可供理解原理和实现的高级用户参考。同时，书中给出的实践案例，可供在进行实际部署时借鉴。前六章为基础内容，供用户理解 Docker 的基本概念和操作；7 ~ 9 章介绍包括数据管理、网络等高级操作；第 10 ~ 13 章介绍了容器生态中的几个核心项目；14、15 章讨论了关于 Docker 安全和实现技术等高级话题。后续章节则分别介绍包括 Etcd、CoreOS、Kubernetes、Mesos、容器云等相关热门开源项目。最后，还展示了使用容器技术的典型的应用场景和实践案例。
+
+* 在线阅读：[docker-practice.com](https://docker-practice.com/)，[GitBook](https://yeasy.gitbooks.io/docker_practice/content/)，[Github](https://github.com/yeasy/docker_practice/blob/master/SUMMARY.md)，[GitBook 国内镜像](https://docker_practice.gitee.io/zh-cn)，[GitBook 英文版国内镜像](https://docker_practice.gitee.io/us_en)，[国内镜像](https://github.com/yeasy/docker_practice/wiki/%E9%A1%B9%E7%9B%AE%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F), [新版 GitBook](https://gitbook.docker-practice.com/)
+* 下载：[pdf](https://github.com/yeasy/docker_practice/wiki/%E4%B8%8B%E8%BD%BD)，[epub](https://github.com/yeasy/docker_practice/wiki/%E4%B8%8B%E8%BD%BD)
+* [离线阅读 `$ docker run -it --rm -p 4000:80 dockerpracticesig/docker_practice`](https://github.com/yeasy/docker_practice/wiki/%E7%A6%BB%E7%BA%BF%E9%98%85%E8%AF%BB%E5%8A%9F%E8%83%BD%E8%AF%A6%E8%A7%A3)
+* [英文翻译](https://github.com/yeasy/docker_practice/issues/363)
+
+Docker 自身仍在快速发展中，生态环境也在蓬勃成长。建议初学者使用最新稳定版本的 Docker 进行学习实践。欢迎 [参与项目维护](CONTRIBUTING.md)。
+
+* [修订记录](CHANGELOG.md)
+* [贡献者名单](https://github.com/yeasy/docker_practice/graphs/contributors)
+
+## 微信小程序
+
+<p align="center">
+<img width="200" src="https://user-images.githubusercontent.com/16733187/49682252-3ac4c500-faec-11e8-86ab-eafe0139be6b.jpg">
+</p>
+
+<p align="center"><strong>微信扫码 随时随地阅读~</strong></p>
+
+## 技术交流
+
+欢迎加入 Docker 技术交流 QQ 群，分享 Docker 资源，交流 Docker 技术。
 
 * QQ 群 I   （已满）：341410255
 * QQ 群 II  （已满）：419042067
@@ -22,78 +46,36 @@
 * QQ 群 VI  （已满）：581983671
 * QQ 群 VII （已满）：252403484
 * QQ 群 VIII（已满）：544818750
-* QQ 群 IX  （可加）：571502246
+* QQ 群 IX  （已满）：571502246
+* QQ 群 X   （可加）：145983035
 
-![Docker 技术入门与实战](docker_primer.png)
+>如果有容器相关的疑问，请通过 [Issues](https://github.com/yeasy/docker_practice/issues/new/choose) 来提出。
 
-《[Docker 技术入门与实战](http://item.jd.com/11598400.html)》一书已经正式出版，包含大量第一手实战案例和更为深入的技术剖析，欢迎大家阅读使用并反馈建议。
+<p align="center">
+<img width="200" src="https://user-images.githubusercontent.com/16733187/65308302-55b87f80-dbbc-11e9-9d42-57eac554fb3b.jpg">
+</p>
 
-* [China-Pub](http://product.china-pub.com/3770833)
-* [京东图书](http://item.jd.com/11598400.html)
-* [当当图书](http://product.dangdang.com/23620853.html)
-* [亚马逊图书](http://www.amazon.cn/%E5%9B%BE%E4%B9%A6/dp/B00R5MYI7C/ref=lh_ni_t?ie=UTF8&psc=1&smid=A1AJ19PSB66TGU)
+<p align="center"><strong>微信扫码 加入群聊~</strong></p>
 
-## 主要版本历史
-* 0.8.0: 2016-MM-DD
-    * 修正文字内容
-* 0.7.0: 2016-06-12
-    * 根据最新版本进行命令调整
-    * 修正若干文字描述
-* 0.6.0: 2015-12-24
-    * 补充 Machine 项目
-    * 修正若干 bug
-* 0.5.0: 2015-06-29
-    * 添加 Compose 项目
-    * 添加 Machine 项目
-    * 添加 Swarm 项目
-    * 完善 Kubernetes 项目内容
-    * 添加 Mesos 项目内容
-* 0.4.0: 2015-05-08
-    * 添加 Etcd 项目
-    * 添加 Fig 项目
-    * 添加 CoreOS 项目
-    * 添加 Kubernetes 项目
-* 0.3.0: 2014-11-25
-    * 完成仓库章节；
-    * 重写安全章节；
-    * 修正底层实现章节的架构、命名空间、控制组、文件系统、容器格式等内容；
-    * 添加对常见仓库和镜像的介绍；
-    * 添加 Dockerfile 的介绍；
-    * 重新校订中英文混排格式。
-    * 修订文字表达。
-    * 发布繁体版本分支：zh-Hant。
-* 0.2.0: 2014-09-18
-    * 对照官方文档重写介绍、基本概念、安装、镜像、容器、仓库、数据管理、网络等章节；
-    * 添加底层实现章节；
-    * 添加命令查询和资源链接章节；
-    * 其它修正。
-* 0.1.0: 2014-09-05
-    * 添加基本内容;
-    * 修正错别字和表达不通顺的地方。
+## 进阶学习
 
+[![](https://github.com/yeasy/docker_practice/raw/master/_images/docker_primer3.png)](https://union-click.jd.com/jdc?e=&p=AyIGZRtYFAcXBFIZWR0yEgRQH1kXAhs3EUQDS10iXhBeGlcJDBkNXg9JHU4YDk5ER1xOGRNLGEEcVV8BXURFUFdfC0RVU1JRUy1OVxUBFwNXGVscMlVYLlAaXAV1Z1JHA0dWEHVXZTliY1QLWStaJQAWB10fXhwKEDdlG1wlUHzf462DsLMO0%2F%2BUjp2VIgZlG18RBBcCUBlbEAoTBWUcWxwySVI7HAhBBxEOBUgOFQYQUGUraxYyIjdVK1glQHxXUEhYEVEUUFQcC0IHGgRRSAgVARAPAhsLFgNCDl0ZWiUAEwZREg%3D%3D&t=W1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYEAYQBVUS)
 
-Docker 自身仍在快速发展中，生态环境也在蓬勃成长。源码开源托管在 Github 上，欢迎参与维护：[https://github.com/yeasy/docker_practice](https://github.com/yeasy/docker_practice)。贡献者 [名单](https://github.com/yeasy/docker_practice/graphs/contributors)。
+《[Docker 技术入门与实战](https://union-click.jd.com/jdc?e=&p=AyIGZRtYFAcXBFIZWR0yEgRQH1kXAhs3EUQDS10iXhBeGlcJDBkNXg9JHU4YDk5ER1xOGRNLGEEcVV8BXURFUFdfC0RVU1JRUy1OVxUBFwNXGVscMlVYLlAaXAV1Z1JHA0dWEHVXZTliY1QLWStaJQAWB10fXhwKEDdlG1wlUHzf462DsLMO0%2F%2BUjp2VIgZlG18RBBcCUBlbEAoTBWUcWxwySVI7HAhBBxEOBUgOFQYQUGUraxYyIjdVK1glQHxXUEhYEVEUUFQcC0IHGgRRSAgVARAPAhsLFgNCDl0ZWiUAEwZREg%3D%3D&t=W1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYEAYQBVUS)》第三版已经面世，介绍最新的容器技术栈，欢迎大家阅读使用并反馈建议。
 
-## 参加步骤
-* 在 GitHub 上 `fork` 到自己的仓库，如 `docker_user/docker_practice`，然后 `clone` 到本地，并设置用户信息。
-```
-$ git clone git@github.com:docker_user/docker_practice.git
-$ cd docker_practice
-$ git config user.name "yourname"
-$ git config user.email "your email"
-```
-* 修改代码后提交，并推送到自己的仓库。
-```
-$ #do some change on the content
-$ git commit -am "Fix issue #1: change helo to hello"
-$ git push
-```
-* 在 GitHub 网站上提交 pull request。
-* 定期使用项目仓库内容更新自己仓库内容。
-```
-$ git remote add upstream https://github.com/yeasy/docker_practice
-$ git fetch upstream
-$ git checkout master
-$ git rebase upstream/master
-$ git push -f origin master
-```
+<p align="center">
+<img width="200" src="https://user-images.githubusercontent.com/16733187/57310918-3c3afd80-711d-11e9-8816-266e5ede70bb.jpg">
+</p>
+
+<p align="center"><strong>微信扫码购买~</strong></p>
+
+* [京东图书](https://union-click.jd.com/jdc?e=&p=AyIGZRtYFAcXBFIZWR0yEgRQH1kXAhs3EUQDS10iXhBeGlcJDBkNXg9JHU4YDk5ER1xOGRNLGEEcVV8BXURFUFdfC0RVU1JRUy1OVxUBFwNXGVscMlVYLlAaXAV1Z1JHA0dWEHVXZTliY1QLWStaJQAWB10fXhwKEDdlG1wlUHzf462DsLMO0%2F%2BUjp2VIgZlG18RBBcCUBlbEAoTBWUcWxwySVI7HAhBBxEOBUgOFQYQUGUraxYyIjdVK1glQHxXUEhYEVEUUFQcC0IHGgRRSAgVARAPAhsLFgNCDl0ZWiUAEwZREg%3D%3D&t=W1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYEAYQBVUS)
+* [China-Pub](http://product.china-pub.com/8052127)
+
+## 鼓励项目
+
+<p align="center">
+<img width="200" src="https://github.com/yeasy/docker_practice/raw/master/_images/donate.jpeg">
+</p>
+
+<p align="center"><strong>欢迎鼓励项目一杯 coffee~</strong></p>

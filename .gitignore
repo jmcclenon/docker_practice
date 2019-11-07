@@ -6,6 +6,5 @@ _book/
 *.swp
 *.edx
 .DS_Store
-
-
 node_modules/
+.vuepress/dist
